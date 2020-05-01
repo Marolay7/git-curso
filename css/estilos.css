@@ -1,0 +1,187 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Baloo Tammudu 2', cursive;
+}
+/* .contenedor{
+    margin-left: 4%;
+    margin-right: 4%;
+} */
+/* h1{
+    color: #46474E;
+}
+h3{
+    margin-top: 20px;
+    color: #46474E;
+} */
+header{
+    height: 70px;
+    background: #0B4A75;
+    color:#fff;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+/* header section{
+    width: 100%;
+    display: inline-flex;
+    background: #0B4A75;
+} */
+#btn-menu{
+    display: none;
+}
+header label{
+    font-size: 30px;
+    cursor: pointer;
+    display: none;
+}
+
+
+/* .topbar{
+    background: #B9C94C;
+    width: 100%;
+}
+.topbar a{
+    color: #0B4A75;
+    margin-left: 90%;
+}
+
+.topbar a:hover{
+    text-decoration: none;
+    color: #fff;
+}
+.logo{
+    margin-left: 2%;
+    width: 15%;
+}
+.logo img{
+    width: 100%;
+} */
+/* 
+.menu{
+    margin-top: auto;
+    margin-left: auto;
+    box-sizing: border-box;
+} */
+
+.menu ul{
+    background: #0B4A75;
+    display: flex;
+    list-style: none;
+}
+
+.menu ul ul{
+    display: none;
+}
+
+.menu  a{
+    display: block;
+    padding: 15px 20px;
+    color: #fff;
+    text-decoration: none;
+}
+.menu  a:hover{
+	background: rgba(0, 0,0, 0.3)
+}
+img{
+    position: absolute;
+    left:20px;
+    top:-10px;
+}
+.menu a span {
+    margin-left: 10px;
+}
+
+.menu ul li:hover ul {
+    display:none;
+    /* queda raro como lo pongo */
+    width: 100%;
+    position: absolute;
+}
+.login span:hover {
+    opacity: 1;
+}
+@media(max-width:978px){
+    header label{
+        display: block;
+    }
+    .menu{
+        position: absolute;
+        top:60px;
+        left:10;
+        width: 100%;
+        transform: translateX(-100%);
+        transition: all 0.3s;
+    }
+    .menu ul{
+        display: block;
+        background: #555;
+    }
+
+    .menu ul li:hover ul{
+        display:none;
+        position: absolute;
+    }
+
+    .menu a span{
+        position: absolute;
+        right: 5px;
+    }
+
+    .login a{
+        padding: 35px;
+    }
+
+    #btn-menu:checked ~ .menu{
+        transform: translateX(0%);
+    }
+
+    .menu ul ul{
+        background:rgba(0,0,0,0.4) ;
+    }
+    .menu ul ul a {
+        padding: 20px 40px;
+    }
+}
+
+
+/* 
+header section label{
+    display: none;
+    color: #fff;
+    font-size: 20px;
+    margin-left: 80%;
+    margin-right: 2%;
+}
+header section label:hover{
+    color: rgba(0,0,0,0.3);
+}
+
+.menu label:hover{
+    color: rgba(0,0,0,0.3);
+}
+@media screen and (max-width: 1000px){
+    .logintext{
+        display: none;
+    }
+}
+.tablas{
+    width: 100%;
+}
+.tablas article{
+    width: 100%;
+}
+.tablas article table{
+    width: 100%;
+}
+.tablas div{
+    display: inline-block;
+}
+.filtro{
+    width: 20%;
+    float: right; 
+}
+.filtro form div input{
+    display: inline-block;
+} */

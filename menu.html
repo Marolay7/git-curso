@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+    content="width=device-width, user-scalable=no,
+     initial-scale=1, maximum-scale=1, minimum-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="css/fontello.css">
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Tammudu+2&display=swap" rel="stylesheet">
+    <script src="http://code.jquery.com/jquery-1.11.3.min.js" ></script>
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <input type="checkbox" name="btn-menu" id="btn-menu">
+        <label for="btn-menu" class="icon-menu"></label>
+        <nav class="menu">
+            <ul>
+                <li><a href="{{ url('/') }}">Inicio</a></li>
+                <li class="submenu"><a href="{{ route('banco.index') }}">Banco De Ideas<span class="icon-down-open"></span></a>
+                <ul>
+                    <li><a href="">Modas</a></li>
+                    <li><a href="">Sistemas</a></li>
+                    <li><a href="">Contabilidad</a></li>
+                    <li><a href=""></a></li>
+                </ul> </li>
+                <li class="submenu"><a href="">Estudiantes<span class="icon-down-open"></span></a>
+                    <ul>
+                        <li><a href="">Modas</a></li>
+                        <li><a href="">Sistemas</a></li>
+                        <li><a href="">Contabilidad</a></li>
+                        <li><a href=""></a></li>
+                    </ul></li>
+                <li class="submenu"><a href="">Docentes<span class="icon-down-open"></span></a><ul>
+                    <li><a href="">Modas</a></li>
+                    <li><a href="">Sistemas</a></li>
+                    <li><a href="">Contabilidad</a></li>
+                    <li><a href=""></a></li>
+                </ul></li>
+                <li><a href="">Administrativos</a></li>
+            </ul>
+        </nav>
+    </header>
+</body>
+</html>
