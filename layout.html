@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width,user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1">
+    <link rel="stylesheet" href="css/app.css">
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="css/fontello.css">
+    <link rel="stylesheet" href="fontawesome-free-5.13.0-web/css/all.css">
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Tammudu+2&display=swap" rel="stylesheet">
+    <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+
+    <title>Trabajo de grado - Unidades Tecnológicas de Santander</title>
+</head>
+
+<body>
+    <header>
+        <input type="checkbox" name="btn-menu" id="btn-menu">
+        <label for="btn-menu" class="icon-menu"></label>
+        <section class="topbar">
+        </section>
+        <article class="logo">
+            <img src="img/uts-logo.png" height="70px" width="110px">
+        </article>
+
+        <nav class="menu">
+            <ul>
+                <li><a href="{{ url('/') }}">Inicio</a></li>
+                <li><a href="#">Banco De Ideas</a></li>
+                <li><a href="#">Estudiantes</a></li>
+                <li><a href="#">Docentes</a></li>
+                <li><a href="">Administrativos</a></li>
+                <li class="login"><a href=""><span class="icon-user-circle">Juanito Perez</span></a>
+                </li>
+            </ul>
+        </nav>
+        </article>
+        <!-- <label for="menuicon"><span class="fas fa-bars"></span></label> -->
+
+    </header>
+    <div class="contenedor">
+        @yield('content')
+    </div>
+    <script src="js/app.js"></script>
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="menu.js"></script>
+</body>
+
+</html>
